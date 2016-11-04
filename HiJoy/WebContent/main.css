@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+#main_logo img{
+	width:inherit;
+	height:inherit;
+}
+.main_left div{
+	width:100%;
+	height:50%;
+}
+.center{
+	text-align:center;
+}
+.main_body{
+	background-image:url(images/bg.jpg);
+	background-repeat:repeat;
+}
+.delete_record{}
