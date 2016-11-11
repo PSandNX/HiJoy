@@ -11,7 +11,7 @@ public class Welcome {
 	
 	@RequestMapping("/welcome")
 	public ModelAndView welcome(HttpSession session){
-		ModelAndView modelAndView = new ModelAndView("main");
+		ModelAndView modelAndView = new ModelAndView("show");
 		modelAndView.addObject("username",session.getAttribute("username"));
 		modelAndView.addObject("status",session.getAttribute("status"));
 		return modelAndView;

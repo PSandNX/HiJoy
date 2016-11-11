@@ -1,0 +1,51 @@
+@CHARSET "UTF-8";
+#main_logo>img{
+	height: 100px;
+	width: 300px;
+}
+#main_top{
+	background-color:black;
+}
+#main_body_a{
+	color:black;
+	background-image: url(../images/zelda.png);
+	background-size: 100% 100%;
+}
+#main_body_b{
+	color:#6F9;
+	background-color:#FFF;
+}
+#main_body_b img{
+	height:100px;
+	width: 100px;
+}
+#main_body_c{
+	color: white;
+	background-color: #6F9;
+}
+#main_body_c img{
+	height:600px;
+	width:500px;
+}
+#main_foot{
+	color: white;
+	background-color: black;
+}
+.body_1{
+	color:white;
+	background-color:#CCF;
+}
+.line_white{
+	margin:0 auto;
+	background-color:white;
+	width:7%;
+	height: 2px;
+}
+.round {
+	margin:0 auto;
+   padding:10px; width:300px; height:50%;
+   border: 5px solid #dedede;
+   -moz-border-radius: 15px;      /* Gecko browsers */
+   -webkit-border-radius: 15px;   /* Webkit browsers */
+   border-radius:15px;            /* W3C syntax */
+}
