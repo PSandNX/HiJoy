@@ -20,144 +20,46 @@
 </head>
 <body class="body_1">
 <div class="container">
-  <div class="row" id="main_top">
-    <div class="col-xs-4" id="main_logo">
-      <img alt="无法显示" src="${ctx }/images/ff15.png">
+  <div class="row">
+    <div class="col-xs-2" id="main_left">
+		<ul class="nav nav-pills nav-stacked ul_nav_1 text-center">
+		  <li><a href="#">首页</a></li>
+		  <li><a href="#">描述一</a></li>
+		  <li><a href="#">描述二</a></li>
+		  <li><a href="#">描述三</a></li>
+		  <li><a href="#">描述四</a></li>
+		  <li><a href="#">描述五</a></li>
+		  <li><a>描述六</a></li>
+		</ul>
     </div>
-    <div class="col-xs-2"></div>
-    <div class="clearfix visible-xs"></div>
-    <div class="col-xs-2 text-center" style="line-height:100px">test1</div>
-    <div class="col-xs-2 text-center" style="line-height:100px">test2</div>
-    <div class="col-xs-2 text-center" style="line-height:100px">test3</div>
-  </div>
-  <div class="row" id="main_body_a">
-    <div class="col-xs-12">
-      <div class="row">
-        <div class="clo-xs-12" style="height:100px"></div>
+    <div class="col-xs-7" id="main_middle">
+      <div class="row text-center">
+        <h1>描述一</h1>
       </div>
-      <div class="row">
-        <div class="col-xs-12 text-center">
-          <h1>我们是研之</h1>
-        </div>
+      <div class="row text-center">
+        <h1>描述二</h1>
       </div>
-      <div class="row">
-        <div class="col-xs-12 text-center">
-          <h2>
-	          <span style="color: white">为了</span>
-	          <span style="color: red">美好的</span>
-	          <span style="color: green">明天</span>
-          </h2>
-        </div>
+      <div class="row text-center">
+        <h1>描述三</h1>
       </div>
-      <div class="row">
-        <div style="height: 50px"></div>
+      <div class="row text-center">
+        <h1>描述。。。。</h1>
       </div>
-      <div class="row">
-        <div class="col-xs-12 text-center">
-          <div class="line_white"></div>
-        </div>
-      </div>
-      <div class="row">
-        <div style="height:50px"></div>
-      </div>
-      <div class="row">
-        <div class="col-xs-3"></div>
-        <div class="col-xs-4">
-	      <div class="round text-center" style="color:white">iPhone</div>
-	      <div class="row" style="height:50px"></div>
-	      <div class="round text-center">Android</div>
-	    </div>
-	    <div class="col-xs-4">
-	      <img alt="无法显示图片" src="${ctx }/images/test.png" style="height:150px">
-	    </div>
-	  </div>
-      <div class="row" style="height:100px"></div>
     </div>
-  </div>
-  <div class="row" id="main_body_b">
-    <div class="col-xs-12">
-	    <div class="row" style="height:100px;"></div>
-	    <div class="row">
-		  	<div class="col-xs-1"></div>
-		    <div class="col-xs-10">
-		      <div class="col-xs-4 text-center">
-		        <div class="row">
-		          <img alt="无法显示图片" src="${ctx }/images/horizon.png" class="img-circle">
-		        </div>
-		        <div class="row">
-		          <h3>描述一</h3>
-		        </div>
-		      </div>
-		      <div class="col-xs-4 text-center">
-		        <div class="row">
-				  <img alt="无法显示图片" src="${ctx }/images/horizon2.png" class="img-circle">
-		      	</div>
-		      	<div class="row">
-		      	  <h3>描述二</h3>
-		      	</div>
-		      </div>
-		      <div class="col-xs-4 text-center">
-		        <div class="row">
-				  <img alt="无法显示图片" src="${ctx }/images/horizon3.png" class="img-circle">
-		      	</div>
-		      	<div class="row">
-		      	  <h3>描述三</h3>
-		      	</div>
-		      </div>
-		    </div>
-		    <div class="col-xs-1"></div>
-		</div>
-	    <div class="row" style="height:100px"></div>
-    </div>
-  </div>
-  <div class="row" id="main_body_c">
-    <div class="col-xs-12">
-      <div class="row" style="height:50px"></div>
-      <div class="row">
-        <div class="col-xs-6 text-center">
-          <img alt="无法显示图片" src="${ctx}/images/the last guardian.png" class="img-rounded">
-        </div>
-        <div class="col-xs-6 text-center">
-          <h3 style="line-height:600px">描述一</h3>
-        </div>
+    <div class="col-xs-3" id="main_right">
+      <div class="row text-center">
+        <h4>描述一</h4>
       </div>
-      <div class="row">
-        <div class="col-xs-6 text-center">
-          <h3 style="line-height:600px">描述二</h3>
-        </div>
-        <div class="col-xs-6 text-center">
-          <img alt="无法显示图片" src="${ctx}/images/zelda-botw.png" class="img-rounded">
-        </div>
+      <div class="row text-center">
+        <h4>描述二</h4>
       </div>
-      <div class="row">
-        <div class="col-xs-6 text-center">
-          <img alt="无法显示图片" src="${ctx}/images/god of wars.png" class="img-rounded">
-        </div>
-        <div class="col-xs-6 text-center">
-          <h3 style="line-height:600px">描述三</h3>
-        </div>
+      <div class="row text-center">
+        <h4>描述三</h4>
       </div>
-      <div class="row" style="height:50px"></div>
+      <div class="row text-center">
+        <h4>描述。。。。</h4>
+      </div>
     </div>
-  </div>
-  <div class="row" id="main_foot">
-    <div class="row" style="height:30px"></div>
-    <div class="row">
-        <div class="col-xs-3"></div>
-	    <div class="col-xs-2 text-left">
-	       <h3>首页</h3>
-	    </div>
-	    <div class="col-xs-2 text-center">
-	       <h3>关于我们</h3>
-	    </div>
-	    <div class="col-xs-2 text-right">
-	       <h3>加入我们</h3>
-	    </div>
-    </div>
-    <div class="row text-center">
-        <h4>© 2015 杭州妥妥网络科技有限公司 浙ICP备15003715号</h4>
-    </div>
-    <div class="row" style="height:30px"></div>
   </div>
 </div>
 </body>

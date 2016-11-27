@@ -20,8 +20,8 @@
 </head>
 <body class="body_1">
 <div class="container">
-  <div class="row" id="main_top">
-    <div class="col-xs-4" id="main_logo">
+  <div class="row" id="show_top">
+    <div class="col-xs-4" id="show_logo">
       <img alt="无法显示" src="${ctx }/images/ff15.png">
     </div>
     <div class="col-xs-2"></div>
@@ -30,7 +30,7 @@
     <div class="col-xs-2 text-center" style="line-height:100px">test2</div>
     <div class="col-xs-2 text-center" style="line-height:100px">test3</div>
   </div>
-  <div class="row" id="main_body_a">
+  <div class="row" id="show_body_a">
     <div class="col-xs-12">
       <div class="row">
         <div class="clo-xs-12" style="height:100px"></div>
@@ -74,7 +74,7 @@
       <div class="row" style="height:100px"></div>
     </div>
   </div>
-  <div class="row" id="main_body_b">
+  <div class="row" id="show_body_b">
     <div class="col-xs-12">
 	    <div class="row" style="height:100px;"></div>
 	    <div class="row">
@@ -110,7 +110,7 @@
 	    <div class="row" style="height:100px"></div>
     </div>
   </div>
-  <div class="row" id="main_body_c">
+  <div class="row" id="show_body_c">
     <div class="col-xs-12">
       <div class="row" style="height:50px"></div>
       <div class="row">
@@ -140,7 +140,7 @@
       <div class="row" style="height:50px"></div>
     </div>
   </div>
-  <div class="row" id="main_foot">
+  <div class="row" id="show_foot">
     <div class="row" style="height:30px"></div>
     <div class="row">
         <div class="col-xs-3"></div>

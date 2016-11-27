@@ -1,34 +1,44 @@
 @CHARSET "UTF-8";
-#main_logo>img{
+#show_logo>img{
 	height: 100px;
 	width: 300px;
 }
-#main_top{
+#show_top{
 	background-color:black;
 }
-#main_body_a{
+#show_body_a{
 	color:black;
 	background-image: url(../images/zelda.png);
 	background-size: 100% 100%;
 }
-#main_body_b{
+#show_body_b{
 	color:#6F9;
 	background-color:#FFF;
 }
-#main_body_b img{
+#show_body_b img{
 	height:100px;
 	width: 100px;
 }
-#main_body_c{
+#show_body_c{
 	color: white;
 	background-color: #6F9;
 }
-#main_body_c img{
+#show_body_c img{
 	height:600px;
 	width:500px;
 }
-#main_foot{
+#show_foot{
 	color: white;
+	background-color: black;
+}
+/**/
+#main_left{
+	background-color: #06F;
+}
+#main_middle{
+	background-color: green;
+}
+#main_right{
 	background-color: black;
 }
 .body_1{
@@ -48,4 +58,13 @@
    -moz-border-radius: 15px;      /* Gecko browsers */
    -webkit-border-radius: 15px;   /* Webkit browsers */
    border-radius:15px;            /* W3C syntax */
+}
+.ul_nav_1{
+	
+}
+.ul_nav_1 a{
+	color: white;
+}
+.ul_nav_1 a:hover{
+	color: green;
 }
