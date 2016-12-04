@@ -26,4 +26,8 @@ public class Welcome {
 	public String loginOut(){
 		return "redirect:/loginCheck/loginOut.do";
 	}
+	@RequestMapping("/register")
+	public String register(){
+		return "register";
+	}
 }

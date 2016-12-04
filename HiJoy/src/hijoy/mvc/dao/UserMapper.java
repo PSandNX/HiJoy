@@ -15,5 +15,4 @@ public interface UserMapper {
 	
 	public User findUser(User user) throws Exception;
 	
-
 }

@@ -42,6 +42,7 @@
 									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
 									<label for="loginkeeping">记住我</label>
 								</p>
+								<p><a href="/HiJoy/register.do">没有账号？注册</a></p>
                                 <p class="login button"> 
                                     <input id="check_login" type="button" value="登录"/> 
 								</p>
