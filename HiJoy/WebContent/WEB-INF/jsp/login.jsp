@@ -26,7 +26,7 @@
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
                         <div id="login" class="animate form">
-                            <form  action="${pageContext.request.contextPath }/loginCheck/check.do" autocomplete="on" method="post"> 
+                            <form  action="${pageContext.request.contextPath }/loginCheck/loginIn.do" autocomplete="on" method="post"> 
                                 <h1>登录</h1> 
                                 <p> 
                                     <label for="username" class="uname" data-icon="u" >邮箱或用户名</label>
@@ -42,7 +42,6 @@
 									<input type="checkbox" name="loginkeeping" id="loginkeeping" value="loginkeeping" /> 
 									<label for="loginkeeping">记住我</label>
 								</p>
-								<p><a href="/HiJoy/register.do">没有账号？注册</a></p>
                                 <p class="login button"> 
                                     <input id="check_login" type="button" value="登录"/> 
 								</p>
