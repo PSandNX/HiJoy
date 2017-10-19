@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="hijoy.mvc.dao.CollectionMapper">
+	<select id="getCollection" parameterType="String" resultMap="MyCollectionResultMap">
+		select * from collection c join article a on c.article_id=a.id
+		<where>
+			username = #{username}
+		</where>
+		order by collect_time desc
+	</select>
+	<resultMap type="hijoy.mvc.po.MyCollection" id="MyCollectionResultMap">
+		<result property="username" column="username"/>
+		<result property="collectTime" column="collect_time"/>
+		<association property="article" javaType="hijoy.mvc.po.Article">
+			<id property="id" column="id"/>
+			<result property="author" column="author"/>
+			<result property="title" column="title"/>
+			<result property="content" column="content"/>
+			<result property="publishTime" column="publishTime"/>
+			<result property="readNumber" column="readNumber"/>
+			<result property="Image" column="image"/>
+			<result property="details" column="details"/>
+		</association>
+	</resultMap>
+</mapper>

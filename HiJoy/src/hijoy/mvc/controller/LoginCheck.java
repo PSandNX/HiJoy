@@ -21,7 +21,7 @@ public class LoginCheck {
 	private UserService userService;
 	
 	@RequestMapping(value="/loginIn",method=RequestMethod.POST)
-	public String check(@RequestBody User user) throws Exception{
+	public String check(@RequestBody User user,HttpSession session) throws Exception{
 		System.out.println(user);
 		User user2 = userService.findUser(user);
 		System.out.println(user2);
@@ -29,8 +29,8 @@ public class LoginCheck {
 			return "redirect:noUser.do";
 		else{
 			if(user2.getPassword().equals(user.getPassword())){
-//				session.setAttribute("username", user.getUsername());
-//				session.setAttribute("status", 1);
+				session.setAttribute("username", user.getUsername());
+				session.setAttribute("status", 1);
 				return "forward:success.do";
 			}
 			else return "redirect:fail.do";

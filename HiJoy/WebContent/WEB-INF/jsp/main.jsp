@@ -5,62 +5,82 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="${ctx }/bootstrap-3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="${ctx }/css/main.css">
-<script src="${ctx}/js/jquery-3.1.1.min.js"></script>
-<script src="${ctx}/bootstrap-3.3.7/js/bootstrap.min.js"></script>
-<!-- HTML5 Shim 和 Respond.js 用于让 IE8 支持 HTML5元素和媒体查询 -->
-<!-- 注意： 如果通过 file://  引入 Respond.js 文件，则该文件无法起效果 -->
-<!--[if lt IE 9]>
-	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
-<![endif]-->
-<title>主页</title>
+<title>校友信息管理系统</title>
 </head>
-<body class="body_1">
-<div class="container">
-  <div class="row">
-    <div class="col-xs-2" id="main_left">
-		<ul class="nav nav-pills nav-stacked ul_nav_1 text-center">
-		  <li><a href="#">首页</a></li>
-		  <li><a href="#">描述一</a></li>
-		  <li><a href="#">描述二</a></li>
-		  <li><a href="#">描述三</a></li>
-		  <li><a href="#">描述四</a></li>
-		  <li><a href="#">描述五</a></li>
-		  <li><a>描述六</a></li>
-		</ul>
-    </div>
-    <div class="col-xs-7" id="main_middle">
-      <div class="row text-center">
-        <h1>描述一</h1>
-      </div>
-      <div class="row text-center">
-        <h1>描述二</h1>
-      </div>
-      <div class="row text-center">
-        <h1>描述三</h1>
-      </div>
-      <div class="row text-center">
-        <h1>描述。。。。</h1>
-      </div>
-    </div>
-    <div class="col-xs-3" id="main_right">
-      <div class="row text-center">
-        <h4>描述一</h4>
-      </div>
-      <div class="row text-center">
-        <h4>描述二</h4>
-      </div>
-      <div class="row text-center">
-        <h4>描述三</h4>
-      </div>
-      <div class="row text-center">
-        <h4>描述。。。。</h4>
-      </div>
-    </div>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/main.css">
+<script src="${pageContext.request.contextPath}/js/jquery-3.1.1.min.js"></script>
+<script src="${pageContext.request.contextPath}/main.js"></script>
+<script src="${js}/ajaxfileupload.js"></script>
+<body class="main_body">
+  <div id="main_left" class="main_left">
+	  <c:if test="${status=='1'}">
+		  <div class="center"><button id="member">增删改除用户</button></div>
+	  </c:if>
+	  	  <div class="center"><button id="record">增删改除信息</button></div>
   </div>
-</div>
+  <div id="main_top" class="center">
+    <span>校友信息管理系统</span>
+  </div>
+  <div id="main_logo">
+    <img alt="无法显示图片" src="${pageContext.request.contextPath}/logo.png">
+  </div>
+  <div id="main_right">
+    <c:choose>
+      <c:when test="${jspStatus=='1'}">
+         <jsp:include page="member.jsp"></jsp:include>
+      </c:when>
+      <c:otherwise>
+         <jsp:include page="record.jsp"></jsp:include>
+      </c:otherwise>
+    </c:choose>
+  </div>
 </body>
+<script type="text/javascript">
+$(document).ready(function(){
+
+	if("${pageload}"==1)
+		location="${ctx}/upload2.do";
+	setPageCurrent(parseInt("${id}"),5,parseInt("${count}"));
+	main(screen.width*0.99,screen.height*0.9,0.1,0.3,0.03);
+	member_record();
+	$("#excel_add_record").click(function(){ajaxFileUpload();});
+});
+function member_record(){
+	$("#member").click(function(){
+		location="${ctx}/welcome.do";
+	});
+	$("#record").click(function(){
+		location="${ctx}/upload2.do";
+	});
+}
+function ajaxFileUpload() {
+	  var filename = $("#file").val();
+	  if(filename!=null&&filename!="")
+	{$.ajaxFileUpload({
+	    //处理文件上传操作的服务器端地址(可以传参数,已亲测可用)
+	    url: "${ctx}/upload.do",
+	    enctype: "multipart/form-data",
+	    secureuri: false,                       //是否启用安全提交,默认为false
+	    fileElementId: 'file',
+	    success:function(){
+	    	location="${ctx}/upload2.do";
+	    }
+	    //文件选择框的id属性               //服务器返回的格式,可以是json或xml等
+	  });}
+	}
+function setPage(start,end){
+	for(var i=start-1;i<end;i++){
+		if(i<end){
+			$("#record_page").append("<a href=\"${ctx}/upload/"+(i+1)+"\">"+(i+1)+"</a>");
+		}
+	}
+}
+function setPageCurrent(id,space,count){
+	var start=id-space;
+	if(id-space<1) start=1;
+	var end=id+space;
+	if(id+space>count) end=count;
+	setPage(start,end);
+}
+</script>
 </html>

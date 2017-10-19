@@ -26,7 +26,7 @@
                     <a class="hiddenanchor" id="tologin"></a>
                     <div id="wrapper">
                         <div id="login" class="animate form">
-                            <form  action="${pageContext.request.contextPath }/loginCheck/check.do" autocomplete="on" method="post"> 
+                            <form  action="${pageContext.request.contextPath }/loginCheck/loginIn.do" autocomplete="on" method="post"> 
                                 <h1>登录</h1> 
                                 <p> 
                                     <label for="username" class="uname" data-icon="u" >邮箱或用户名</label>
